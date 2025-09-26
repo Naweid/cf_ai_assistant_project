@@ -5,7 +5,7 @@ compatibility_flags = ["nodejs_compat"]
 
 [assets]
 directory = "public"
-binding = "ASSETS"          # so env.ASSETS exists
+binding = "ASSETS"          
 
 [durable_objects]
 bindings = [
@@ -19,7 +19,7 @@ new_sqlite_classes = ["PersonalAssistantAgentSqliteA"]
 
 [ai]
 binding = "AI"
-remote = true               # fine here
+remote = true               
 
 # Must be an array of tables; no "remote" key here
 [[vectorize]]
