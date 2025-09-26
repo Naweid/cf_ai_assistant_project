@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cloudflare Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body{font-family:system-ui, -apple-system, Segoe UI, Roboto; margin:2rem;}
+      #chat{height:60vh;border:1px solid #ddd;border-radius:12px;padding:1rem;overflow:auto}
+      #chat p{margin:.35rem 0}
+      .msg-user{color:#334}
+      .msg-assistant{color:#131}
+      #user-input{width:100%}
+    </style>
+  </head>
+  <body>
+    <h1>Cloudflare Assistant</h1>
+    <div id="chat"></div>
+    <form id="chat-form">
+      <input id="user-input" placeholder="Type message..." />
+      <button type="submit">Send</button>
+    </form>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

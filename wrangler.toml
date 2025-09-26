@@ -1,0 +1,27 @@
+name = "cloudflare-assistant-project"
+main = "src/index.ts"
+compatibility_date = "2025-09-22"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "public"
+binding = "ASSETS"          # so env.ASSETS exists
+
+[durable_objects]
+bindings = [
+  { name = "PERSONAL_AGENT", class_name = "PersonalAssistantAgentSqliteA" }
+]
+
+# Must be an array of tables
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["PersonalAssistantAgentSqliteA"]
+
+[ai]
+binding = "AI"
+remote = true               # fine here
+
+# Must be an array of tables; no "remote" key here
+[[vectorize]]
+binding = "VECTOR_DB"
+index_name = "assistant-memory"
