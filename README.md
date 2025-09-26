@@ -47,16 +47,22 @@ Visit: http://localhost:8787
 3️⃣ Deploy to Cloudflare
 npx wrangler deploy
 
-```bash
+
 Configuration:
 wrangler.toml includes required bindings:
+
 [vars]
 AI = "remote"
-VECTOR_DB = { binding = "VECTOR_DB", index_name = "assistant-memory", remote = true }
+
+[[vectorize]]
+binding = "VECTOR_DB"
+index_name = "assistant-memory"
+remote = true
 
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = ["PersonalAssistantAgentSqliteA"]
+
 
 Prompts:
 All system prompts are defined in PROMPTS.md. Example:
@@ -66,16 +72,17 @@ You are a helpful Cloudflare personal assistant.
 Use retrieved memory when relevant. Be concise, accurate, and cite context inline.
 If you do not know, say so clearly.
 
+
 ✅ Assignment Checklist
- LLM → Uses Cloudflare Workers AI (Llama 3.3)
+LLM → Uses Cloudflare Workers AI (Llama 3.3)
 
- Workflow / Coordination → Durable Objects for session handling
+Workflow / Coordination → Durable Objects for session handling
 
- User Input → Chat UI via WebSockets
+User Input → Chat UI via WebSockets
 
- Memory / State → Vectorize Index + SQLite Durable Object
+Memory / State → Vectorize Index + SQLite Durable Object
+
 
 Notes:
-
 Local AI calls always use Cloudflare Workers AI endpoints.
 Vectorize local bindings are not supported in --local mode but work in deployed environments.
