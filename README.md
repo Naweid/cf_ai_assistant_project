@@ -47,25 +47,17 @@ Visit: http://localhost:8787
 3️⃣ Deploy to Cloudflare
 npx wrangler deploy
 
-## Configuration
-
-`wrangler.toml` includes required bindings:
-
-```toml
+Configuration:
+wrangler.toml includes required bindings:
 [vars]
 AI = "remote"
-
-[[vectorize]]
-binding = "VECTOR_DB"
-index_name = "assistant-memory"
-remote = true
+VECTOR_DB = { binding = "VECTOR_DB", index_name = "assistant-memory", remote = true }
 
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = ["PersonalAssistantAgentSqliteA"]
 
-Prompts
-
+Prompts:
 All system prompts are defined in PROMPTS.md. Example:
 
 ## System Prompt
