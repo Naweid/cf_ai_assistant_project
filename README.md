@@ -69,7 +69,7 @@ new_sqlite_classes = ["PersonalAssistantAgentSqliteA"]
 ## Prompts:
 All system prompts are defined in `PROMPTS.md`. Example:
 
-#### System Prompt
+#### System Prompt:
 You are a helpful Cloudflare personal assistant.  
 Use retrieved memory when relevant. Be concise, accurate, and cite context inline.  
 If you do not know, say so clearly.
