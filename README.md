@@ -46,10 +46,12 @@ Visit: http://localhost:8787
 
 3️⃣ Deploy to Cloudflare
 npx wrangler deploy
+`````
 
+## Configuration:
 
-Configuration:
 wrangler.toml includes required bindings:
+toml
 
 [vars]
 AI = "remote"
