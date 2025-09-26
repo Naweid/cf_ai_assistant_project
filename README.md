@@ -50,8 +50,8 @@ npx wrangler deploy
 
 ## Configuration:
 
-wrangler.toml includes required bindings:
-toml
+`wrangler.toml` includes required bindings:
+```toml
 
 [vars]
 AI = "remote"
