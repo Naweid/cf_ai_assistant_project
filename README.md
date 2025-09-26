@@ -86,7 +86,7 @@ Workflow / Coordination → Durable Objects for session handling
 User Input → Chat UI via WebSockets
 
 Memory / State → Vectorize Index + SQLite Durable Object
-
+`````
 
 ## Notes:
 ```toml
