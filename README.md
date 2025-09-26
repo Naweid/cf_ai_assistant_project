@@ -18,18 +18,20 @@ It demonstrates **real-time AI chat with memory**, backed by **Durable Objects**
 - **Memory**: Vectorize Index + SQLite Durable Object  
 
 ## Project Structure
+```text
 cloudflare-assistant-project/
-├── public/ # Static frontend (chat UI)
-│ ├── index.html
-│ └── index.js
-├── src/ # Worker & Agent code
-│ ├── index.ts
-│ └── PersonalAssistantAgent.ts
-├── PROMPTS.md # System prompts for AI
-├── README.md # Documentation
-├── wrangler.toml # Cloudflare config
+├── public/                # Static frontend (chat UI)
+│   ├── index.html
+│   └── index.js
+├── src/                   # Worker & Agent code
+│   ├── index.ts
+│   └── PersonalAssistantAgent.ts
+├── PROMPTS.md             # System prompts for AI
+├── README.md              # Documentation
+├── wrangler.toml          # Cloudflare config
 ├── package.json
 └── tsconfig.json
+
 
 
 ## Getting Started:
