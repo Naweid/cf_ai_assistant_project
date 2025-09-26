@@ -66,16 +66,19 @@ tag = "v1"
 new_sqlite_classes = ["PersonalAssistantAgentSqliteA"]
 `````
 
-Prompts:
+## Prompts:
+```toml
 All system prompts are defined in PROMPTS.md. Example:
 
-## System Prompt
+System Prompt
 You are a helpful Cloudflare personal assistant.
 Use retrieved memory when relevant. Be concise, accurate, and cite context inline.
 If you do not know, say so clearly.
 `````
 
 ## Assignment Checklist
+```toml
+
 LLM → Uses Cloudflare Workers AI (Llama 3.3)
 
 Workflow / Coordination → Durable Objects for session handling
@@ -85,6 +88,8 @@ User Input → Chat UI via WebSockets
 Memory / State → Vectorize Index + SQLite Durable Object
 
 
-Notes:
+## Notes:
+```toml
+
 Local AI calls always use Cloudflare Workers AI endpoints.
 Vectorize local bindings are not supported in --local mode but work in deployed environments.
