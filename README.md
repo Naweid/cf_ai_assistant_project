@@ -36,8 +36,8 @@ cloudflare-assistant-project/
 
 ## Getting Started:
 
-### 1️⃣ Install dependencies
 ```bash
+2️⃣ Install Dependencies
 npm install
 
 2️⃣ Run locally
