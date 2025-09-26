@@ -31,7 +31,7 @@ cloudflare-assistant-project/
 ├── wrangler.toml          # Cloudflare config
 ├── package.json
 └── tsconfig.json
-
+```
 
 
 ## Getting Started:
