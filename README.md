@@ -47,6 +47,7 @@ Visit: http://localhost:8787
 3️⃣ Deploy to Cloudflare
 npx wrangler deploy
 
+```bash
 Configuration:
 wrangler.toml includes required bindings:
 [vars]
