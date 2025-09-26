@@ -64,7 +64,7 @@ remote = true
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = ["PersonalAssistantAgentSqliteA"]
-
+`````
 
 Prompts:
 All system prompts are defined in PROMPTS.md. Example:
@@ -73,9 +73,9 @@ All system prompts are defined in PROMPTS.md. Example:
 You are a helpful Cloudflare personal assistant.
 Use retrieved memory when relevant. Be concise, accurate, and cite context inline.
 If you do not know, say so clearly.
+`````
 
-
-✅ Assignment Checklist
+## Assignment Checklist
 LLM → Uses Cloudflare Workers AI (Llama 3.3)
 
 Workflow / Coordination → Durable Objects for session handling
