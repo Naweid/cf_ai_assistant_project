@@ -93,3 +93,4 @@ Memory / State → Vectorize Index + SQLite Durable Object
 
 Local AI calls always use Cloudflare Workers AI endpoints.
 Vectorize local bindings are not supported in --local mode but work in deployed environments.
+`````
