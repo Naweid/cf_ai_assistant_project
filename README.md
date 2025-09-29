@@ -19,7 +19,7 @@ It demonstrates **real-time AI chat with memory**, backed by **Durable Objects**
 
 ## Project Structure
 ```text
-cloudflare-assistant-project/
+cf_ai_assistant_project/
 ├── public/                # Static frontend (chat UI)
 │   ├── index.html
 │   └── index.js
